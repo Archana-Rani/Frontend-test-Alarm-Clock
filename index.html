@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Alarm Clock</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Alarm Clock</h1>
+    <div class="clock">
+      <div id="time"></div>
+      <div>
+        <label for="alarmTime">Set Alarm:</label>
+        <!-- <input type="time" id="alarmTime"> -->
+        <input id="alarmTime" type="time" name="appt-time" step="2" />
+        <button onclick="setAlarm()">Set</button>
+      </div>
+      <button onclick="stopAlarm()">Stop Alarm</button>
+    </div>
+  </div>
+
+  <script src="custom.js"></script>
+</body>
+</html>
