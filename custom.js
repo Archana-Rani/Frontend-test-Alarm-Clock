@@ -9,10 +9,12 @@ function updateClock() {
     if(currentTime===localStorage.getItem("alarmTime" )){
       alert("alarm!please wake up")
     }
+    // this is for time display in input field
     document.getElementById('time').innerText = currentTime;
   }
   
   function setAlarm() {
+    //set time for alarm
     const alarmTimeInput = document.getElementById('alarmTime');
     const alarmTime = alarmTimeInput.value;
     //console.log({alarmTime})
